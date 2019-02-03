@@ -26,6 +26,27 @@
 // console.log(name);
 
 // CONST -- always constant, cannot change.
-const name = "Jim";
-console.log(name)
+// const name1 = "Jim";
+// console.log(name1);
 // CONST must have value.
+
+// PRIMITIVE TYPES
+
+// String
+const name = 'Jim Doe';
+
+// Number
+const age = 50;
+
+// Boolean
+const hasCar = false;
+
+// Null
+const car = null; // returns an object
+
+// Undefined
+let test;
+
+// Symbol -> new for ES6
+const sym = Symbol();
+console.log(typeof sym);
