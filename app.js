@@ -49,4 +49,19 @@ let test;
 
 // Symbol -> new for ES6
 const sym = Symbol();
-console.log(typeof sym);
+
+// =========================================
+
+// REFERENCE TYPES - Objects
+// Array
+const vehicles = ['cars', 'trucks'];
+
+// Object Literal
+const address = {
+  city: 'Boston',
+  state: 'MA'
+}
+
+const today = new Date();
+console.log(today);
+console.log(typeof today);
