@@ -38,7 +38,16 @@ val = parseInt('100'); // integer / whole numbers only
 val = parseFloat('100.20'); // for decimals
 
 // Output
-console.log(val);
-console.log(typeof val);
-// console.log(val.length); // .length property only works on strings
-console.log(val.toFixed()); // toFixed method only works on numbers and allows you to specify decimals.
+// console.log(val);
+// console.log(typeof val);
+// // console.log(val.length); // .length property only works on strings
+// console.log(val.toFixed()); // toFixed method only works on numbers and allows you to specify decimals.
+
+// TYPE COERCION
+
+const val1 = String(5);
+const val2 = 6;
+const sum = Number(val1 + val2);
+
+console.log(sum);
+console.log(typeof sum);
