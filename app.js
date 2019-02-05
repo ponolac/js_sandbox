@@ -25,12 +25,17 @@ val = (5*5).toString();
 val = ([1,2,3,4]).toString();
 
 // Converting strings to numbers
-// One option is the number function
+// One option is the number() function
 
 val = Number('5'); // returns 5
 val = Number(true); // returns 1
 val = Number(null); // returns null
 val = Number('hello'); // returns NaN
+
+// other options are parseInt() and parseFloat()
+
+val = parseInt('100'); // integer / whole numbers only
+val = parseFloat('100.20'); // for decimals
 
 // Output
 console.log(val);
