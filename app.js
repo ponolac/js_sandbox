@@ -12,6 +12,9 @@ val = String(4+4);
 // Converting boolean to string
 val = String(true);
 
+// Converting date to string
+val = String(new Date());
+
 // Output
 console.log(val);
 console.log(typeof val);
