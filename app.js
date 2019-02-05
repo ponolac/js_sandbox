@@ -17,3 +17,5 @@ val = 'Hello, my name is ' + firstName + ' and I am ' + age + '.';
 
 // Escaping
 val = 'That\'s great, I can\'t wait';
+
+console.log(val);
