@@ -1,37 +1,16 @@
-// TEMPLATE LITERALS / template strings. ES6
+// Some ways to create arrays
+const numbers = [43,56,33,23,44,36,5];
+const numbers2 = new Array(22,54,67,43,84); // array constructor using array object
+const fruit = ['apple', 'banana', 'orange', 'pear'];
+const mixed = [22, 'hello', true, undefined, null, {a:1, b:1}, new Date()];
 
-const name = 'John';
-const age = 23;
-const job = 'Dev';
-const city = 'Miami';
-let html;
+let val;
 
-// Without template strings (es5)
-html = '<ul><li>Name: ' + name + '</li><li>Age: ' + age + '</li><li>Job: ' + job + '</li><li>City: ' + city + '</li></ul>';
+// get array length
+val = numbers.length;
 
-html = '<ul>' +
-          '<li>Name: ' + name + '</li>' +
-          '<li>Age: ' + age + '</li>' +
-          '<li>Job: ' + job + '</li>' +
-          '<li>City: ' + city + '</li>' +
-          '</ul>';
+// check if is array
+val = Array.isArray(numbers);
 
-function hello(){
-  return 'hello';
-}
-
-// With template literals / template strings (es6)
-
-html = `
-  <ul>
-    <li>Name: ${name}</li> 
-    <li>Age: ${age}</li>
-    <li>Job: ${job}</li>
-    <li>City: ${city}</li>
-    <li>${2 + 2}</li>
-    <li>${hello()}</li>
-    <li>${age > 30 ? 'Over 30' : 'Under 30'}</li>
-  </ul>
-`;
-
-document.body.innerHTML = html;
+console.log(numbers);
+console.log(val);
