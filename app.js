@@ -15,4 +15,5 @@ val += 'Holland';  // += to append
 
 val = 'Hello, my name is ' + firstName + ' and I am ' + age + '.';
 
-console.log(val);
+// Escaping
+val = 'That\'s great, I can\'t wait';
