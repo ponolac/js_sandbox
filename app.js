@@ -1,53 +1,30 @@
-// TYPE CONVERSION -- taking a variable and changing the data type.
-
+const num1 = 100;
+const num2 = 50;
 let val;
 
-// Converting number to string
-// One option is to wrap in string function
+// Simple math with numbers
 
-val = String(5); 
-val = String(4+4);
+val = num1 + num2;
+val = num1 * num2;
+val = num1 - num2;
+val = num1 / num2;
+val = num1 % num2; // modulo operator
 
-// Converting boolean to string
-val = String(true);
+// Math Object  
+              /* Side note: an object has properties and methods.
+                A property is like an attribute. A method is a function (inside an object). */
+val = Math.PI;
+val = Math.E;
+val = Math.round(2.8); // Round
+val = Math.ceil(2.4); // specify if want to round up
+val = Math.floor(2.8); // specify if want to round down
+val = Math.sqrt(64); // square root
+val = Math.abs(-3); // absolute
+val = Math.pow(8, 2); // power of.
+val = Math.min(2,5,9,3,4,-5);
+val = Math.max(2,5,90,3,4,-5);
+val = Math.random(); // random 
 
-// Converting date to string
-val = String(new Date());
+val = Math.floor(Math.random() * 20 + 1); // random integer rounded up 
 
-// Converting array to string
-val = String([1,2,3,4]);
-
-// Another option is the toString() method
-val = (5).toString();
-val = (false).toString();
-val = (new Date()).toString();
-val = (5*5).toString();
-val = ([1,2,3,4]).toString();
-
-// Converting strings to numbers
-// One option is the number() function
-
-val = Number('5'); // returns 5
-val = Number(true); // returns 1
-val = Number(null); // returns null
-val = Number('hello'); // returns NaN
-
-// other options are parseInt() and parseFloat()
-
-val = parseInt('100'); // integer / whole numbers only
-val = parseFloat('100.20'); // for decimals
-
-// Output
-// console.log(val);
-// console.log(typeof val);
-// // console.log(val.length); // .length property only works on strings
-// console.log(val.toFixed()); // toFixed method only works on numbers and allows you to specify decimals.
-
-// TYPE COERCION
-
-const val1 = String(5);
-const val2 = 6;
-const sum = Number(val1 + val2);
-
-console.log(sum);
-console.log(typeof sum);
+console.log(val);
