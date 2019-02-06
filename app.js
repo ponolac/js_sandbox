@@ -1,41 +1,22 @@
-// OBJECT LITERAL REFERENCE TYPE
-
-const person = {
-  firstName: 'Steve',
-  lastName: 'Smith',
-  age: 26,
-  email: 'test@mail.com',
-  vehicles: ['truck', 'sedan', 'motorcycle'],
-  address: {
-    city: 'Miami',
-    state: 'FL'
-  },
-  getBirthYear: function(){
-    return 2018 - this.age;
-  }
-}
-
 let val;
 
-val = person;
+const today = new Date();
+let birthday = new Date('9-10-1999 11:02:03');
+birthday = new Date('September 10 1980');
+birthday = new Date('9/10/80');
 
-// get specific value
-val = person.lastName; // common
-val = person['lastName']; // uncommon
-val = person.age;
-val = person.vehicles[0];
-val = person.address.state;
-val = person.address['city'];
-val = person.getBirthYear(); // function()
+val = today.getMonth(); // zero-based!
+val = today.getDate();
+val = today.getDay();
+val = today.getFullYear();
+val = today.getHours();
+val = today.getMinutes();
+val = today.getSeconds();
+val = today.getTime();
 
-console.log(val);
+birthday.setMonth(2);
+birthday.setDate(12);
+birthday.setFullYear(1985);
+birthday.setHours(3);
 
-const people = [
-  {name: 'John', age: 30},
-  {name: 'Mike', age: 23},
-  {name: 'Michael', age: 35}
-];
-
-for(let i = 0; i < people.length; i++){
-console.log(people[i].name);
-}
+console.log(birthday);
