@@ -1,58 +1,41 @@
-// Some ways to create arrays
-const numbers = [43,56,33,23,44,36,5];
-const numbers2 = new Array(22,54,67,43,84); // array constructor using array object
-const fruit = ['apple', 'banana', 'orange', 'pear'];
-const mixed = [22, 'hello', true, undefined, null, {a:1, b:1}, new Date()];
+// OBJECT LITERAL REFERENCE TYPE
+
+const person = {
+  firstName: 'Steve',
+  lastName: 'Smith',
+  age: 26,
+  email: 'test@mail.com',
+  vehicles: ['truck', 'sedan', 'motorcycle'],
+  address: {
+    city: 'Miami',
+    state: 'FL'
+  },
+  getBirthYear: function(){
+    return 2018 - this.age;
+  }
+}
 
 let val;
 
-// get array length
-val = numbers.length;
+val = person;
 
-// check if is array
-val = Array.isArray(numbers);
+// get specific value
+val = person.lastName; // common
+val = person['lastName']; // uncommon
+val = person.age;
+val = person.vehicles[0];
+val = person.address.state;
+val = person.address['city'];
+val = person.getBirthYear(); // function()
 
-// get single value
-val = numbers[3];
-val = numbers[0];
-
-// insert into array
-numbers[2] = 100;
-
-// find index of value
-val = numbers.indexOf(36);
-
-// MUTATING ARRAYS
-// numbers.push(250); // add to the end of array
-// numbers.unshift(120); // add to front of array
-// numbers.pop(); // take off from end
-// numbers.shift(); // take off from front
-// numbers.splice(1,3); // splice values
-// numbers.reverse(); // reverse
-
-// Concatenate Array
-val = numbers.concat(numbers2);
-
-// Sorting an array
-val = fruit.sort();
-val = numbers.sort(); // see next line
-
-// use the compare function to sort numbers in numerical order
-val = numbers.sort(function(x, y){
-  return x - y;
-}); 
-
-// reverse sort
-val = numbers.sort(function(x, y){
-  return y - x;
-});
-
-// Find() method   (takes in a testing function)
-function under50(num){
-  return num < 50;
-}
-
-val = numbers.find(under50);
-
-console.log(numbers);
 console.log(val);
+
+const people = [
+  {name: 'John', age: 30},
+  {name: 'Mike', age: 23},
+  {name: 'Michael', age: 35}
+];
+
+for(let i = 0; i < people.length; i++){
+console.log(people[i].name);
+}
