@@ -12,5 +12,14 @@ val = numbers.length;
 // check if is array
 val = Array.isArray(numbers);
 
+// get single value
+val = numbers[2];
+
+// insert into array
+numbers[2] = 100;
+
+// find index of value
+val = numbers.indexOf(36);
+
 console.log(numbers);
 console.log(val);
