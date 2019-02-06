@@ -13,13 +13,22 @@ val = numbers.length;
 val = Array.isArray(numbers);
 
 // get single value
-val = numbers[2];
+val = numbers[3];
+val = numbers[0];
 
 // insert into array
 numbers[2] = 100;
 
 // find index of value
 val = numbers.indexOf(36);
+
+// MUTATING ARRAYS
+numbers.push(250); // add to the end of array
+numbers.unshift(120); // add to front of array
+numbers.pop(); // take off from end
+numbers.shift(); // take off from front
+numbers.splice(1,3); // splice values
+numbers.reverse(); // reverse
 
 console.log(numbers);
 console.log(val);
