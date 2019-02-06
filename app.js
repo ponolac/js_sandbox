@@ -23,12 +23,36 @@ numbers[2] = 100;
 val = numbers.indexOf(36);
 
 // MUTATING ARRAYS
-numbers.push(250); // add to the end of array
-numbers.unshift(120); // add to front of array
-numbers.pop(); // take off from end
-numbers.shift(); // take off from front
-numbers.splice(1,3); // splice values
-numbers.reverse(); // reverse
+// numbers.push(250); // add to the end of array
+// numbers.unshift(120); // add to front of array
+// numbers.pop(); // take off from end
+// numbers.shift(); // take off from front
+// numbers.splice(1,3); // splice values
+// numbers.reverse(); // reverse
+
+// Concatenate Array
+val = numbers.concat(numbers2);
+
+// Sorting an array
+val = fruit.sort();
+val = numbers.sort(); // see next line
+
+// use the compare function to sort numbers in numerical order
+val = numbers.sort(function(x, y){
+  return x - y;
+}); 
+
+// reverse sort
+val = numbers.sort(function(x, y){
+  return y - x;
+});
+
+// Find() method   (takes in a testing function)
+function under50(num){
+  return num < 50;
+}
+
+val = numbers.find(under50);
 
 console.log(numbers);
 console.log(val);
