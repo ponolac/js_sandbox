@@ -25,11 +25,20 @@
 
 // DO WHILE LOOP - will always run at least once no matter what.
 
-let i = 0;
+// let i = 0;
 
-do {
-  console.log('Number ' + i);
-  i++;
+// do {
+//   console.log('Number ' + i);
+//   i++;
+// }
+
+// while(i < 10);
+
+// LOOPING THRU ARRAYS
+
+const cars = ['Ford', 'Chevy', 'Honda', 'Toyota'];
+cars[1];
+
+for(let i = 0; i < cars.length; i++){
+  console.log(cars[i]);
 }
-
-while(i < 10);
