@@ -16,9 +16,20 @@
 
 // WHILE LOOP - when iterations are unclear.
 
-let i = 0; 
+// let i = 0; 
 
-while(i < 10){
+// while(i < 10){
+//   console.log('Number ' + i);
+//   i++;
+// }
+
+// DO WHILE LOOP - will always run at least once no matter what.
+
+let i = 0;
+
+do {
   console.log('Number ' + i);
   i++;
 }
+
+while(i < 10);
