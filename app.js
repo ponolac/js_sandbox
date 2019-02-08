@@ -1,83 +1,50 @@
-// // FOR LOOP - when you know how many iterations it will have.
+// WINDOW METHODS / OBJECTS / PROPERTIES
 
-// for(let i = 0; i <= 10; i++){
-//   if(i === 2){
-//     console.log('2 is best');
-//     continue;
-//   }
+// ALERT
 
-//   if(i === 10){
-//     console.log('Stop the loop');
-//     break;
-//   }
-  
-//   console.log('Number ' + i);
+// alert('Test'); // window.alert('Test');
+
+// PROMPT - similar to alert but takes in input
+
+// const input = prompt();
+// alert(input);
+
+// CONFIRM - used often when you're deleting something
+
+// if(confirm('Are you sure')){
+//   console.log('Yes');
+// } else {
+//   console.log('No');
 // }
 
-// WHILE LOOP - when iterations are unclear.
+let val;
 
-// let i = 0; 
+// // OUTER HEIGHT AND WIDTH
+val = window.outerHeight;
+val = window.outerWidth;
 
-// while(i < 10){
-//   console.log('Number ' + i);
-//   i++;
-// }
+// OUTER HEIGHT AND WIDTH;
+val = window.innerHeight;
+val = window.innerWidth;
 
-// DO WHILE LOOP - will always run at least once no matter what.
+// SCROLL POINTS
+val = window.scrollY;
+val = window.scrollX;
 
-// let i = 0;
+// LOCATION OBJECT - can be used to redirect and reload page.
+val = window.location;
+val = window.location.hostname;
+val = window.location.port;
+val = window.location.href;
+val = window.location.search;
 
-// do {
-//   console.log('Number ' + i);
-//   i++;
-// }
+ // Redirect
+//  window.location.href = 'http://google.com';
 
-// while(i < 10);
-
-// LOOPING THRU ARRAYS
-
-const cars = ['Ford', 'Chevy', 'Honda', 'Toyota'];
-cars[1];
-
-// for(let i = 0; i < cars.length; i++){
-//   console.log(cars[i]);
-// }
-
-// FOR EACH, LOOP THRU ARRAY
-
-// cars.forEach(function(car, index, array){ // takes in an anonymous function 
-//   console.log(`${index} : ${car}`);
-//   console.log(array);
-// });
-
-// MAP METHOD - most commmonly used to return a different array 
-
-// const users = [
-//   {id:1, name:'John'},
-//   {id:2, name:'Sara'},
-//   {id:3, name:'Tom'},
-//   {id:4, name:'Madeline'},
-// ];
-
-// const ids = users.map(function(user){
-//   return user.id;
-// });
-
-// console.log(ids);
-
-// FOR IN LOOP - often used for objects 
-
- // looping thru object example. using for in loop.
-
-const user = {
-  firstName: 'John',
-  lastName: 'Johnson',
-  age: 30
-}
-
-for(let x in user){
-  console.log(`${x} : ${user[x]}`);
-}
+ // Reload
 
 
+// History Object
+window.history.go();
 
+console.log(val);
