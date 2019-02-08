@@ -42,9 +42,16 @@ val = window.location.search;
 //  window.location.href = 'http://google.com';
 
  // Reload
-
+// window.location.reload();
 
 // History Object
-window.history.go();
+// window.history.go(-1);
+// val = window.history.length; 
+
+// Navigator Object
+val = window.navigator;
+val = window.navigator.cookieEnabled;
+val = window.navigator.platform;
+val = window.navigator.geolocation;
 
 console.log(val);
