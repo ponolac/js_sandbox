@@ -1,31 +1,35 @@
-// Global Scope
+let val;
 
-            // let and const have a block level scope
-            // var has a function scope
+// properties
 
-var a = 1;
-let b = 2;
-const c = 3;
+val = document;
+val = document.all;
+val = document.all[2];
+val = document.all.length;
+val = document.head;
+val = document.body;
+val = document.doctype;
+val = document.domain;
+val = document.URL;
+val = document.characterSet;
+val = document.contentType;
 
-// function test() {
-//   var a = 4;
-//   let b = 5;
-//   const c = 6;
-//   console.log('Function Scope: ', a, b, c);
-// }
+// can select things without using selectors but not recommended.
 
-// test();
+val = document.forms;
+val = document.forms[0];
+val = document.forms[0].id;
+val = document.forms[0].method;
+val = document.forms[0].action;
 
-// if(true) {
-//   // Block Scope
-//   var a = 4;
-//   let b = 5;
-//   const c = 6;
-//   console.log('If Scope: ', a, b, c);
-// }
+val = document.links;
+val = document.links[5];
+val = document.links[5].className;
+val = document.links[5].classList[0];
 
-for(var a = 0; a < 10; a++) {
-  console.log(`Loop: ${a}`);
-}
+val = document.images;
 
-console.log('Global Scope: ', a, b, c);
+val = document.scripts;
+val = document.scripts[2].getAttribute('src');
+
+console.log(val);
