@@ -32,4 +32,16 @@ val = document.images;
 val = document.scripts;
 val = document.scripts[2].getAttribute('src');
 
+// cannot use forEach on a collection by default. it would return this error: TypeError: scripts.forEach is not a function
+
+// However, you can turn collections into in array so as to use forEach etc.
+
+let scripts = document.scripts;
+
+let scriptsArr = Array.from(scripts);
+
+scriptsArr.forEach(function(script){
+  console.log(script.getAttribute('src'));
+});
+
 console.log(val);
