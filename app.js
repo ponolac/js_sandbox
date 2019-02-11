@@ -1,58 +1,31 @@
-// Traversing the DOM
+// Create element
+const li = document.createElement('li');
 
-let val;
+// Add class
+li.className = 'collection-item';
 
-const list = document.querySelector('ul.collection');
-const listItem = document.querySelector('li.collection-item:first-child');
+// Add ID
+li.id = 'new-item';
 
-val = listItem;
-val = list;
+// Add attribute
+li.setAttribute('title', 'New Item');
 
-// Get child nodes
-val = list.childNodes; // returns a node list with blank text from html doc
-val = list.childNodes[0];
-val = list.childNodes[0].nodeName;
-val = list.childNodes[1].nodeType;
+// Create text node and append
+li.appendChild(document.createTextNode('hallo wurld'));
 
-// Node Types and their codes:
-// 1 - Element
-// 2 - Attribute (deprecated)
-// 3 - Text node
-// 8 - Comment
-// 9 - Document itself
-// 10 - Doctype
+// Create new link element
+const link = document.createElement('a');
 
-// Get children element nodes
-val = list.children; // returns an html collection, just the elements.
-val = list.children[1];
-list.children[1].textContent = 'harrr';
+// Add classes
+link.className = 'delete-item secondary-content';
 
-// Children of children
-val = list.children[3].children[0].id = 'test-link';
-val = list.children[3].children[0];
+// Add icon html
+link.innerHTML = '<i class="fa fa-remove"></li>';
 
-// First child
-val = list.firstChild;
-val = list.firstElementChild;
+// Append link into li
+li.appendChild(link);
 
-// Last child
-val = list.lastChild;
-val = list.lastElementChild;
+// Append li as child to ul
+document.querySelector('ul.collection').appendChild(li);
 
-// Count child elements
-val = list.childElementCount;
-
-// Get parent node
-val = listItem.parentNode;
-val = listItem.parentElement;
-val = listItem.parentElement.parentElement;
-
-// Get next sibling
-val = listItem.nextSibling;
-val = listItem.nextElementSibling.nextElementSibling.previousElementSibling;
-
-// Get previous sibling
-val = listItem.previousSibling;
-val = listItem.previousElementSibling;
-
-console.log(val);
+console.log(li);
