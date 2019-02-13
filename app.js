@@ -1,5 +1,5 @@
 // EVENT BUBBLING
 
 document.querySelector('.card-title').addEventListener('click', function(){
-  console.log(
+  console.log('card title');
 });
