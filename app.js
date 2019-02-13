@@ -1,3 +1,5 @@
 // EVENT BUBBLING
 
-document.querySelector
+// EVENT BUBBLING
+
+document.querySelector('.card-title')
