@@ -1,3 +1,3 @@
 // EVENT BUBBLING
 
-document.querySelector('.card-title').addEventListener
+document.querySelector('.card-title').addEventListener('click', 
