@@ -6,4 +6,6 @@ document.querySelector('.card-title').addEventListener('click', function(){
 
 
 
+
+
 // DELEGATION
